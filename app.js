@@ -3,19 +3,18 @@ $(document).ready(function () {
     //enter the page
     $('#enterButton').on("click", function () {
         $('.enterPage').css('display', "none");
-        $('.homePage').css('visibility', 'visible')
+        $('.homePage').css('visibility', 'visible');
     })
 
-    var navOpen = false;;
+    var navOpen = false;
 
-    $('#openNav').on('click', function () {
+    $('#mySidenav').hover(function () {
         if (navOpen === true) {
             closeNav();
         } else {
             openNav();
         }
     })
-
 
     function openNav() {
         $('#mySidenav').css("width", "250px");
@@ -24,8 +23,8 @@ $(document).ready(function () {
     }
 
     function closeNav() {
-        $('#mySidenav').css("width", "0px");
-        $('#homePage').css('margin-left', "0px");
+        $('#mySidenav').css("width", "70px");
+        $('#homePage').css('margin-left', "70px");
         navOpen = false;
     }
 

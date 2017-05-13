@@ -18,7 +18,7 @@
 /* The side navigation menu */
 #mySidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 60px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -44,20 +44,35 @@
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-#mySidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+#homePage {
     transition: margin-left .5s;
     padding: 20px;
 }
+
+/* exclusively lore page */
+.loreDescription { 
+    max-width: 65%;
+    float: right;
+    word-wrap: normal;
+    margin-left: 15px;
+}
+
+#comicVayne {
+    width: 20vw;
+    height: 30hw;
+    position: absolute;
+}
+
+.loreContainer { 
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.title { 
+    margin-left: 60px;
+}
+/* end of the lore page */
 
 /* On smaller screens, where height is less than 450px, change the style of the#mySidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
