@@ -11,11 +11,21 @@ $(document).ready(function () {
     $('#mySidenav').hover(function () {
         if (navOpen === true) {
             closeNav();
+            rotateBack();
         } else {
             openNav();
+            rotateText();
         }
     })
 
+    function rotateText() {
+        $('.vertical-text').addClass('rotateText');
+    }
+    
+    function rotateBack() {
+        $('.vertical-text').removeClass('rotateText');
+    }
+    
     function openNav() {
         $('#mySidenav').css("width", "250px");
         $('#homePage').css('margin-left', 250);

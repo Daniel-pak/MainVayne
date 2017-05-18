@@ -1,35 +1,61 @@
-.enterPage { 
+.enterPage {
     margin-top: 50px;
 }
 
-#enterButton { 
+#enterButton {
     font-size: 1.5em;
     font-family: 'Roboto Mono', monospace;
-    text-transform:  uppercase;
-    background-color: white;  
-/*    more styling here*/
+    text-transform: uppercase;
+    background-color: white;
+    /*    more styling here*/
 }
 
-.homePage { 
+.homePage {
     visibility: hidden;
 }
 
 
-/* The side navigation menu */
-#mySidenav {
-    height: 100%; /* 100% Full-height */
-    width: 60px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the#mySidenav */
+/* Nav text */
+
+.vertical-text {
+    transform: rotate(270deg);
+    color: white;
+    transition: .5s;
 }
 
+.rotateText { 
+    transform: rotate(360deg);
+    text-align: center;
+    transition: .5s;
+}
+
+
+/* The side navigation menu */
+
+#mySidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 60px;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the#mySidenav */
+}
+
+
 /* The navigation menu links */
+
 #mySidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -39,19 +65,26 @@
     transition: 0.3s
 }
 
+
 /* When you mouse over the navigation links, change their color */
-#mySidenav a:hover, .offcanvas a:focus{
+
+#mySidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #homePage {
     transition: margin-left .5s;
     padding: 20px;
 }
 
+
 /* exclusively lore page */
-.loreDescription { 
+
+.loreDescription {
     max-width: 65%;
     float: right;
     word-wrap: normal;
@@ -64,18 +97,28 @@
     position: absolute;
 }
 
-.loreContainer { 
+.loreContainer {
     position: relative;
     padding: 10px 10px 10px 10px;
 }
 
-.title { 
+.title {
     margin-left: 60px;
 }
+
+
 /* end of the lore page */
 
+
 /* On smaller screens, where height is less than 450px, change the style of the#mySidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
-    #mySidenav {padding-top: 15px;}
-    #mySidenav a {font-size: 18px;}
+    #mySidenav {
+        padding-top: 15px;
+    }
+    #mySidenav a {
+        font-size: 18px;
+    }
 }
+
+/*---- Login Page here ----*/
